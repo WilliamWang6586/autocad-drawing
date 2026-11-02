@@ -15,13 +15,14 @@
 
 ## 安装
 
-```bash
-# 方式一：直接链接安装（Hermes Agent）
-hermes skills install https://github.com/WilliamWang6586/hermes-skills/tree/main/autocad-drawing
+把本目录整个复制到你的 agent 技能目录（如 `~/.agent/skills/` 或所用工具的 skills 目录）：
 
-# 方式二：手动拷贝
-git clone https://github.com/WilliamWang6586/hermes-skills.git && cp -r hermes-skills/autocad-drawing ~/AppData/Local/hermes-home/skills/
+```bash
+git clone https://github.com/WilliamWang6586/autocad-drawing.git
+cp -r autocad-drawing "<你的技能目录>/"
 ```
+
+放进去后，agent 读到 `SKILL.md` 即可按其中的触发条件调用。
 
 ## 文件
 
@@ -36,4 +37,3 @@ git clone https://github.com/WilliamWang6586/hermes-skills.git && cp -r hermes-s
 
 ## 说明
 
-本技能收录于 [hermes-skills](https://github.com/WilliamWang6586/hermes-skills)，每个技能独立成目录、独立维护。内容若参考第三方项目，见本目录 `ATTRIBUTION.md`。
